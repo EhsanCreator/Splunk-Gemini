@@ -71,12 +71,12 @@ Open `bin/gemini_command.py` and replace the placeholder:
 
 # Replace with your actual key
 API_KEY = "YOUR_GOOGLE_API_KEY_HERE"
-
-2. Configure Proxy (Optional)
-
+```
+### 2. Configure Proxy (Optional)
 If your Splunk server is behind a firewall, VPN, or in a region blocking Google services, configure the proxy settings in bin/gemini_command.py.
 Note: The app supports passing Splunk traffic through local proxies like v2ray/Nekoray.
 
+```python
 # Example for local proxy
 PROXIES = {
     "http": "http://192.168.1.100:2080",
@@ -85,45 +85,40 @@ PROXIES = {
 
 # If direct connection is available, leave it empty:
 # PROXIES = {}
-📖 Usage Guide
-Method A: Using the Workflow Action (Fastest)
+```
 
-Run a search in Splunk (e.g., index=ips alert_level=high).
+## 📖 Usage Guide
 
-Click the arrow next to an event or a field.
-
-Select Event Actions > 🛡️ Analyze with Gemini AI.
-
+### Method A: Using the Workflow Action (Fastest)
+1. Run a search in Splunk (e.g., index=ips alert_level=high).
+2. Click the arrow next to an event or a field.
+3. Select Event Actions > 🛡️ Analyze with Gemini AI.
 The Workbench will open in a new tab with the analysis already in progress.
 
-Method B: Using the Dashboard (Bulk/Manual)
+### Method B: Using the Dashboard (Bulk/Manual)
+1. Go to Apps > TA-gemini-splunk.
+2. Open Gemini Threat Analysis Workbench.
+3. Base Search: Enter a query to fetch logs (e.g., index=windows EventCode=4625 | head 10).
+4. Select Model: Choose your preferred Gemini version.
+5. Click Submit.
 
-Go to Apps > TA-gemini-splunk.
+## ❓ Troubleshooting
 
-Open Gemini Threat Analysis Workbench.
+| Issue | Solution |
+| :--- | :--- |
+| **Search is waiting for input...** | Ensure you are using the latest version of the dashboard XML provided in this repo. The app uses default tokens to prevent this. |
+| **API Error (404/403)** | Check your API Key. Also, verify that the `selected_model` exists in your region. |
+| **Connection Refused** | Check your `PROXIES` setting in `bin/gemini_command.py`. Ensure the IP matches your host machine IP (not 127.0.0.1) if Splunk is running on a VM. |
+| **JSON Parse Error** | Rarely, the AI might fail to return JSON. Try running the search again. |
 
-Base Search: Enter a query to fetch logs (e.g., index=windows EventCode=4625 | head 10).
 
-Select Model: Choose your preferred Gemini version.
-
-Click Submit.
-
-❓ Troubleshooting
-Issue	Solution
-Search is waiting for input...	Ensure you are using the latest version of the dashboard XML provided in this repo. The app uses default tokens to prevent this.
-API Error (404/403)	Check your API Key. Also, verify that the selected_model exists in your region.
-Connection Refused	Check your PROXIES setting in bin/gemini_command.py. Ensure the IP matches your host machine IP (not 127.0.0.1) if Splunk is running on a VM.
-JSON Parse Error	Rarely, the AI might fail to return JSON. Try running the search again.
-🤝 Contributing
-
+## 🤝 Contributing
 Pull requests are welcome! If you want to add support for more models (Claude, GPT) or improve the dashboard visualizations:
 
-Fork the repo.
+1. Fork the repo.
+2. Create a feature branch.
+3. Submit a PR.
 
-Create a feature branch.
 
-Submit a PR.
-
-📄 License
-
+## 📄 License
 This project is licensed under the MIT License.
