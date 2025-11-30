@@ -1,0 +1,51 @@
+name,version,displayName,description,inputTokenLimit,outputTokenLimit,supportedGenerationMethods,temperature,topP,topK,maxTemperature,thinking
+models/embedding-gecko-001,001,Embedding Gecko,Obtain a distributed representation of a text.,1024,1,"embedText, countTextTokens",,,,,
+models/gemini-2.5-pro-preview-03-25,2.5-preview-03-25,Gemini 2.5 Pro Preview 03-25,Gemini 2.5 Pro Preview 03-25,1048576,65536,"generateContent, countTokens, createCachedContent, batchGenerateContent",1.0,0.95,64.0,2.0,True
+models/gemini-2.5-flash,001,Gemini 2.5 Flash,"Stable version of Gemini 2.5 Flash, our mid-size multimodal model that supports up to 1 million tokens, released in June of 2025.",1048576,65536,"generateContent, countTokens, createCachedContent, batchGenerateContent",1.0,0.95,64.0,2.0,True
+models/gemini-2.5-pro-preview-05-06,2.5-preview-05-06,Gemini 2.5 Pro Preview 05-06,"Preview release (May 6th, 2025) of Gemini 2.5 Pro",1048576,65536,"generateContent, countTokens, createCachedContent, batchGenerateContent",1.0,0.95,64.0,2.0,True
+models/gemini-2.5-pro-preview-06-05,2.5-preview-06-05,Gemini 2.5 Pro Preview,"Preview release (June 5th, 2025) of Gemini 2.5 Pro",1048576,65536,"generateContent, countTokens, createCachedContent, batchGenerateContent",1.0,0.95,64.0,2.0,True
+models/gemini-2.5-pro,2.5,Gemini 2.5 Pro,"Stable release (June 17th, 2025) of Gemini 2.5 Pro",1048576,65536,"generateContent, countTokens, createCachedContent, batchGenerateContent",1.0,0.95,64.0,2.0,True
+models/gemini-2.0-flash-exp,2.0,Gemini 2.0 Flash Experimental,Gemini 2.0 Flash Experimental,1048576,8192,"generateContent, countTokens, bidiGenerateContent",1.0,0.95,40.0,2.0,
+models/gemini-2.0-flash,2.0,Gemini 2.0 Flash,Gemini 2.0 Flash,1048576,8192,"generateContent, countTokens, createCachedContent, batchGenerateContent",1.0,0.95,40.0,2.0,
+models/gemini-2.0-flash-001,2.0,Gemini 2.0 Flash 001,"Stable version of Gemini 2.0 Flash, our fast and versatile multimodal model for scaling across diverse tasks, released in January of 2025.",1048576,8192,"generateContent, countTokens, createCachedContent, batchGenerateContent",1.0,0.95,40.0,2.0,
+models/gemini-2.0-flash-lite-001,2.0,Gemini 2.0 Flash-Lite 001,Stable version of Gemini 2.0 Flash-Lite,1048576,8192,"generateContent, countTokens, createCachedContent, batchGenerateContent",1.0,0.95,40.0,2.0,
+models/gemini-2.0-flash-lite,2.0,Gemini 2.0 Flash-Lite,Gemini 2.0 Flash-Lite,1048576,8192,"generateContent, countTokens, createCachedContent, batchGenerateContent",1.0,0.95,40.0,2.0,
+models/gemini-2.0-flash-lite-preview-02-05,preview-02-05,Gemini 2.0 Flash-Lite Preview 02-05,"Preview release (February 5th, 2025) of Gemini 2.0 Flash-Lite",1048576,8192,"generateContent, countTokens, createCachedContent, batchGenerateContent",1.0,0.95,40.0,2.0,
+models/gemini-2.0-flash-lite-preview,preview-02-05,Gemini 2.0 Flash-Lite Preview,"Preview release (February 5th, 2025) of Gemini 2.0 Flash-Lite",1048576,8192,"generateContent, countTokens, createCachedContent, batchGenerateContent",1.0,0.95,40.0,2.0,
+models/gemini-2.0-pro-exp,2.5-exp-03-25,Gemini 2.0 Pro Experimental,"Experimental release (March 25th, 2025) of Gemini 2.5 Pro",1048576,65536,"generateContent, countTokens, createCachedContent, batchGenerateContent",1.0,0.95,64.0,2.0,True
+models/gemini-2.0-pro-exp-02-05,2.5-exp-03-25,Gemini 2.0 Pro Experimental 02-05,"Experimental release (March 25th, 2025) of Gemini 2.5 Pro",1048576,65536,"generateContent, countTokens, createCachedContent, batchGenerateContent",1.0,0.95,64.0,2.0,True
+models/gemini-exp-1206,2.5-exp-03-25,Gemini Experimental 1206,"Experimental release (March 25th, 2025) of Gemini 2.5 Pro",1048576,65536,"generateContent, countTokens, createCachedContent, batchGenerateContent",1.0,0.95,64.0,2.0,True
+models/gemini-2.0-flash-thinking-exp-01-21,2.5-preview-05-20,Gemini 2.5 Flash Preview 05-20,"Preview release (April 17th, 2025) of Gemini 2.5 Flash",1048576,65536,"generateContent, countTokens, createCachedContent, batchGenerateContent",1.0,0.95,64.0,2.0,True
+models/gemini-2.0-flash-thinking-exp,2.5-preview-05-20,Gemini 2.5 Flash Preview 05-20,"Preview release (April 17th, 2025) of Gemini 2.5 Flash",1048576,65536,"generateContent, countTokens, createCachedContent, batchGenerateContent",1.0,0.95,64.0,2.0,True
+models/gemini-2.0-flash-thinking-exp-1219,2.5-preview-05-20,Gemini 2.5 Flash Preview 05-20,"Preview release (April 17th, 2025) of Gemini 2.5 Flash",1048576,65536,"generateContent, countTokens, createCachedContent, batchGenerateContent",1.0,0.95,64.0,2.0,True
+models/gemini-2.5-flash-preview-tts,gemini-2.5-flash-exp-tts-2025-05-19,Gemini 2.5 Flash Preview TTS,Gemini 2.5 Flash Preview TTS,8192,16384,"countTokens, generateContent",1.0,0.95,64.0,2.0,
+models/gemini-2.5-pro-preview-tts,gemini-2.5-pro-preview-tts-2025-05-19,Gemini 2.5 Pro Preview TTS,Gemini 2.5 Pro Preview TTS,8192,16384,"countTokens, generateContent",1.0,0.95,64.0,2.0,
+models/learnlm-2.0-flash-experimental,2.0,LearnLM 2.0 Flash Experimental,LearnLM 2.0 Flash Experimental,1048576,32768,"generateContent, countTokens",1.0,0.95,64.0,2.0,
+models/gemma-3-1b-it,001,Gemma 3 1B,,32768,8192,"generateContent, countTokens",1.0,0.95,64.0,,
+models/gemma-3-4b-it,001,Gemma 3 4B,,32768,8192,"generateContent, countTokens",1.0,0.95,64.0,,
+models/gemma-3-12b-it,001,Gemma 3 12B,,32768,8192,"generateContent, countTokens",1.0,0.95,64.0,,
+models/gemma-3-27b-it,001,Gemma 3 27B,,131072,8192,"generateContent, countTokens",1.0,0.95,64.0,,
+models/gemma-3n-e4b-it,001,Gemma 3n E4B,,8192,2048,"generateContent, countTokens",1.0,0.95,64.0,,
+models/gemma-3n-e2b-it,001,Gemma 3n E2B,,8192,2048,"generateContent, countTokens",1.0,0.95,64.0,,
+models/gemini-flash-latest,Gemini Flash Latest,Gemini Flash Latest,Latest release of Gemini Flash,1048576,65536,"generateContent, countTokens, createCachedContent, batchGenerateContent",1.0,0.95,64.0,2.0,True
+models/gemini-flash-lite-latest,Gemini Flash-Lite Latest,Gemini Flash-Lite Latest,Latest release of Gemini Flash-Lite,1048576,65536,"generateContent, countTokens, createCachedContent, batchGenerateContent",1.0,0.95,64.0,2.0,True
+models/gemini-pro-latest,Gemini Pro Latest,Gemini Pro Latest,Latest release of Gemini Pro,1048576,65536,"generateContent, countTokens, createCachedContent, batchGenerateContent",1.0,0.95,64.0,2.0,True
+models/gemini-2.5-flash-lite,001,Gemini 2.5 Flash-Lite,"Stable version of Gemini 2.5 Flash-Lite, released in July of 2025",1048576,65536,"generateContent, countTokens, createCachedContent, batchGenerateContent",1.0,0.95,64.0,2.0,True
+models/gemini-2.5-flash-image-preview,2.0,Nano Banana,Gemini 2.5 Flash Preview Image,32768,32768,"generateContent, countTokens, batchGenerateContent",1.0,0.95,64.0,1.0,
+models/gemini-2.5-flash-image,2.0,Nano Banana,Gemini 2.5 Flash Preview Image,32768,32768,"generateContent, countTokens, batchGenerateContent",1.0,0.95,64.0,1.0,
+models/gemini-2.5-flash-preview-09-2025,Gemini 2.5 Flash Preview 09-2025,Gemini 2.5 Flash Preview Sep 2025,Gemini 2.5 Flash Preview Sep 2025,1048576,65536,"generateContent, countTokens, createCachedContent, batchGenerateContent",1.0,0.95,64.0,2.0,True
+models/gemini-2.5-flash-lite-preview-09-2025,2.5-preview-09-25,Gemini 2.5 Flash-Lite Preview Sep 2025,"Preview release (Septempber 25th, 2025) of Gemini 2.5 Flash-Lite",1048576,65536,"generateContent, countTokens, createCachedContent, batchGenerateContent",1.0,0.95,64.0,2.0,True
+models/gemini-3-pro-preview,3-pro-preview-11-2025,Gemini 3 Pro Preview,Gemini 3 Pro Preview,1048576,65536,"generateContent, countTokens, createCachedContent, batchGenerateContent",1.0,0.95,64.0,2.0,True
+models/gemini-3-pro-image-preview,3.0,Nano Banana Pro,Gemini 3 Pro Image Preview,131072,32768,"generateContent, countTokens, batchGenerateContent",1.0,0.95,64.0,1.0,True
+models/nano-banana-pro-preview,3.0,Nano Banana Pro,Gemini 3 Pro Image Preview,131072,32768,"generateContent, countTokens, batchGenerateContent",1.0,0.95,64.0,1.0,True
+models/gemini-robotics-er-1.5-preview,1.5-preview,Gemini Robotics-ER 1.5 Preview,Gemini Robotics-ER 1.5 Preview,1048576,65536,"generateContent, countTokens",1.0,0.95,64.0,2.0,True
+models/gemini-2.5-computer-use-preview-10-2025,Gemini 2.5 Computer Use Preview 10-2025,Gemini 2.5 Computer Use Preview 10-2025,Gemini 2.5 Computer Use Preview 10-2025,131072,65536,"generateContent, countTokens",1.0,0.95,64.0,2.0,True
+models/embedding-001,001,Embedding 001,Obtain a distributed representation of a text.,2048,1,embedContent,,,,,
+models/text-embedding-004,004,Text Embedding 004,Obtain a distributed representation of a text.,2048,1,embedContent,,,,,
+models/gemini-embedding-exp-03-07,exp-03-07,Gemini Embedding Experimental 03-07,Obtain a distributed representation of a text.,8192,1,"embedContent, countTextTokens, countTokens",,,,,
+models/gemini-embedding-exp,exp-03-07,Gemini Embedding Experimental,Obtain a distributed representation of a text.,8192,1,"embedContent, countTextTokens, countTokens",,,,,
+models/gemini-embedding-001,001,Gemini Embedding 001,Obtain a distributed representation of a text.,2048,1,"embedContent, countTextTokens, countTokens, asyncBatchEmbedContent",,,,,
+models/aqa,001,Model that performs Attributed Question Answering.,"Model trained to return answers to questions that are grounded in provided sources, along with estimating answerable probability.",7168,1024,generateAnswer,0.2,1.0,40.0,,
+models/imagen-4.0-generate-preview-06-06,01,Imagen 4 (Preview),Vertex served Imagen 4.0 model,480,8192,predict,,,,,
+models/imagen-4.0-ultra-generate-preview-06-06,01,Imagen 4 Ultra (Preview),Vertex served Imagen 4.0 ultra model,480,8192,predict,,,,,
+models/imagen-4.0-generate-001,001,Imagen 4,Vertex served Imagen 4.0 model,480,8192,predict,,,,,
